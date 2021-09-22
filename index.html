@@ -75,8 +75,9 @@
         justify-content: center;
         padding: 0;
       "
-    >
+    > 
       <button
+      onclick="navDisplayButton()"
       style="position: absolute; left: 0;"
         class="navbar-toggler"
         type="button"
@@ -88,7 +89,7 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a id="toplog" href="#home" class="navbar-brand" style="height: 100%;"
+      <a id="toplog" href="#home" class="navbar-brand" style="height: 100%; display: none;"
         ><span style="height: 100%;"
           ><img
             id="navbarlogo"
@@ -294,9 +295,8 @@
           class="
             col-4
             offset-4
-            col-sm-4 col-md-4
-            offset-md-0
-            col-lg-3
+            col-sm-4
+            col-lg-4
             offset-lg-0
             col-xl-3
             offset-xl-0
@@ -308,7 +308,7 @@
         <div
           class="
             offset-1
-            col-10 col-sm-10 col-md-6 col-lg-7 col-xl-7
+            col-10 col-sm-10 col-lg-5 col-xl-7
             title
             align-self-center
           "
@@ -518,12 +518,11 @@
     </section>
 
     <!-- BITS Logo + Sponsor Section -->
-    <section>
-      <div class="container" style="margin-bottom: 100px">
-        <div class="">
+    <section id="intro" style="margin-top: 20vh;">
+        <div class="row">
           <div
             class="
-              col-md-offset-0 col-md-4 col-sm-offset-4 col-sm-4
+              col-6 offset-3 offset-md-0 col-md-4
               align-self-center
             "
           >
@@ -540,7 +539,7 @@
           </div>
           <div
             class="
-              col-md-offset-0 col-md-4 col-sm-offset-4 col-sm-4
+            col-6 offset-3 offset-md-0 col-md-4
               align-self-center
             "
           >
@@ -557,7 +556,7 @@
           </div>
           <div
             class="
-              col-md-offset-0 col-md-4 col-sm-offset-4 col-sm-4
+            col-6 offset-3 offset-md-0 col-md-4
               align-self-center
             "
           >
@@ -572,56 +571,8 @@
               src="./img/solidworks.png"
             />
           </div>
-        </div>
       </div>
     </section>
-
-    <!-- contact section -->
-    <section id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8 title">
-            <h2>Contact Us</h2>
-            <hr />
-            <p>
-              Want to know more about us? Feel free to contact us.<br /><a
-                href="tel:+918879705469"
-                class="fa fa-phone wow bounceIn"
-                data-wow-delay="0.9s"
-                ><b>+91 88797 05469</b></a
-              >
-            </p>
-
-            <form method="post" id="contact-form">
-              <input
-                type="text"
-                class="form-control"
-                id="name-field"
-                placeholder="Name"
-                required
-              />
-              <input
-                type="email"
-                class="form-control"
-                id="email-field"
-                placeholder="Email"
-                required
-              />
-              <textarea
-                class="form-control"
-                placeholder="Message"
-                id="text-field"
-                rows="6"
-                required
-              ></textarea>
-              <input type="submit" class="form-control" value="SEND EMAIL" />
-            </form>
-            <h2 id="after-submit"></h2>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- Footer -->
     <footer>
       <div class="container">
@@ -654,13 +605,6 @@
                 <a
                   href="mailto:kratosbitsgoa@gmail.com"
                   class="fa fa-envelope"
-                  data-wow-delay="0.9s"
-                ></a>
-              </li>
-              <li>
-                <a
-                  href="tel:+918879705469"
-                  class="fa fa-phone"
                   data-wow-delay="0.9s"
                 ></a>
               </li>
